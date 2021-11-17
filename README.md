@@ -13,3 +13,6 @@ Contains useful math functions which currently may not be implemented in the rul
 # Arrays
 
 Contains useful arrays of items that may not be implemented in the rules editor (i.e list of all primary weapons)
+
+# Blocks with requirements 
+- [GetPlayerRotation](get_player_rotation.xml) requires [acos](math/calculate_acos.xml) to work
