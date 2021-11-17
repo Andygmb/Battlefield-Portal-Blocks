@@ -1,0 +1,287 @@
+<block xmlns="https://developers.google.com/blockly/xml" type="subroutineBlock" id="u*!uUfO5yggZOK|B+NbP" deletable="false">
+  <field name="SUBROUTINE_NAME">CalculatePlayerYaw</field>
+  <statement name="ACTIONS">
+    <block type="SetVariable" id="?90UCZjZqnl+;Ocmm,_w">
+      <value name="VALUE-0">
+        <block type="variableReferenceBlock" id=":#h2hXOfPUFPS^.7Yj~r">
+          <mutation isObjectVar="true"></mutation>
+          <field name="OBJECTTYPE">Player</field>
+          <field name="VAR" id="Rj4jm.W~;06ipDyQZ?6C" variabletype="Player">Yaw</field>
+          <value name="OBJECT">
+            <block type="EventPlayer" id="L$|B.ZVEfsquqOgUN7a?"></block>
+          </value>
+        </block>
+      </value>
+      <value name="VALUE-1">
+        <block type="DotProduct" id="3Nu*45cC@-4SdPZwB1!K" inline="false">
+          <value name="VALUE-0">
+            <block type="Normalize" id=":=]l^x?!|(1sJJruJY#7">
+              <value name="VALUE-0">
+                <block type="CreateVector" id="55eZV;/URDYeZz`r3;Wn" inline="false">
+                  <value name="VALUE-0">
+                    <block type="XComponentOf" id="M?|1hikCDbL91@H5H.7p">
+                      <value name="VALUE-0">
+                        <block type="WorldVectorOf" id="8@BBT)uds8.ng+@h1kFM">
+                          <value name="VALUE-0">
+                            <block type="ForwardVector" id="N(5wxww[ZPWUKc5;~_^w"></block>
+                          </value>
+                          <value name="VALUE-1">
+                            <block type="EventPlayer" id="U:][+!hAaCdd5{*j$mb_"></block>
+                          </value>
+                        </block>
+                      </value>
+                    </block>
+                  </value>
+                  <value name="VALUE-1">
+                    <block type="Number" id="PS-J~4y8ZiA,C8Gy*(87">
+                      <field name="NUM">0</field>
+                    </block>
+                  </value>
+                  <value name="VALUE-2">
+                    <block type="ZComponentOf" id="/GB]3YW.)s.hM[VeP|@z">
+                      <value name="VALUE-0">
+                        <block type="WorldVectorOf" id="PS_egb%PA0j[-jugL+xr">
+                          <value name="VALUE-0">
+                            <block type="ForwardVector" id="~_d72STbY!Wwx1X*l%X,"></block>
+                          </value>
+                          <value name="VALUE-1">
+                            <block type="EventPlayer" id="Vv8!u1*3Xc-:3ecoH}#l"></block>
+                          </value>
+                        </block>
+                      </value>
+                    </block>
+                  </value>
+                </block>
+              </value>
+            </block>
+          </value>
+          <value name="VALUE-1">
+            <block type="ForwardVector" id="Iyw?$m#,FkP9u86f%~77"></block>
+          </value>
+        </block>
+      </value>
+      <next>
+        <block type="If" id="X;fJe+dPDu.$G3JO$@Px">
+          <mutation else="1"></mutation>
+          <value name="VALUE-0">
+            <block type="GreaterThan" id="wrTQ1K=7AwnQ2-tDL?2R">
+              <value name="VALUE-0">
+                <block type="GetVariable" id="5R3I+Pl~XaIOmWlAu$!H">
+                  <value name="VALUE-0">
+                    <block type="variableReferenceBlock" id="|!(Ypq64ud-MoMM6FY,u">
+                      <mutation isObjectVar="true"></mutation>
+                      <field name="OBJECTTYPE">Player</field>
+                      <field name="VAR" id="Rj4jm.W~;06ipDyQZ?6C" variabletype="Player">Yaw</field>
+                      <value name="OBJECT">
+                        <block type="EventPlayer" id="!UU};;Gu|1kd2G[]wmCI"></block>
+                      </value>
+                    </block>
+                  </value>
+                </block>
+              </value>
+              <value name="VALUE-1">
+                <block type="Number" id="KonrLyY)8yGT@sgm8Wh%">
+                  <field name="NUM">0</field>
+                </block>
+              </value>
+            </block>
+          </value>
+          <statement name="DO">
+            <block type="SetVariable" id="%/}!Bv|xy31Su+g`[6!_">
+              <value name="VALUE-0">
+                <block type="variableReferenceBlock" id="l7I5fszC-+dGX.FKm^4+">
+                  <mutation isObjectVar="true"></mutation>
+                  <field name="OBJECTTYPE">Player</field>
+                  <field name="VAR" id="Rj4jm.W~;06ipDyQZ?6C" variabletype="Player">Yaw</field>
+                  <value name="OBJECT">
+                    <block type="EventPlayer" id="{+)K%aIwwVAMac9gq8_p"></block>
+                  </value>
+                </block>
+              </value>
+              <value name="VALUE-1">
+                <block type="Multiply" id="Y3zkJvYYBY=+;o,]{1(|">
+                  <value name="VALUE-0">
+                    <block type="Subtract" id=")m@_UQPZ#9pc4^DhA1:6">
+                      <value name="VALUE-0">
+                        <block type="Number" id="8CPhfV*%2,%BHRe!J/ss">
+                          <field name="NUM">1</field>
+                        </block>
+                      </value>
+                      <value name="VALUE-1">
+                        <block type="GetVariable" id="PBJsXoH/ecJ52k%xp)(E">
+                          <value name="VALUE-0">
+                            <block type="variableReferenceBlock" id="tL8v)Cb7su@~tOa=3Q*_">
+                              <mutation isObjectVar="true"></mutation>
+                              <field name="OBJECTTYPE">Player</field>
+                              <field name="VAR" id="Rj4jm.W~;06ipDyQZ?6C" variabletype="Player">Yaw</field>
+                              <value name="OBJECT">
+                                <block type="EventPlayer" id="BAgc{tL@U=|0zh$RwA00"></block>
+                              </value>
+                            </block>
+                          </value>
+                        </block>
+                      </value>
+                    </block>
+                  </value>
+                  <value name="VALUE-1">
+                    <block type="Number" id="ZCS^vtA4FHUm1[e[/P@.">
+                      <field name="NUM">1.57079632679</field>
+                    </block>
+                  </value>
+                </block>
+              </value>
+            </block>
+          </statement>
+          <statement name="ELSE">
+            <block type="SetVariable" id="ziZMV3TT)~f3SRswC^6.">
+              <value name="VALUE-0">
+                <block type="variableReferenceBlock" id="IDEv2u}[A45gN1!_6W8D">
+                  <mutation isObjectVar="true"></mutation>
+                  <field name="OBJECTTYPE">Player</field>
+                  <field name="VAR" id="Rj4jm.W~;06ipDyQZ?6C" variabletype="Player">Yaw</field>
+                  <value name="OBJECT">
+                    <block type="EventPlayer" id="=QIxC~%rx57LaM21}v|j"></block>
+                  </value>
+                </block>
+              </value>
+              <value name="VALUE-1">
+                <block type="Add" id="C?M5E:-DOVumkk:-Yi+q" inline="false">
+                  <value name="VALUE-0">
+                    <block type="Number" id="A};;GLSb1ZHOoJWzs$5|">
+                      <field name="NUM">1.57079632679</field>
+                    </block>
+                  </value>
+                  <value name="VALUE-1">
+                    <block type="Multiply" id="@,8bLg{%@o/s{$m6ysaq">
+                      <value name="VALUE-0">
+                        <block type="AbsoluteValue" id="na%yuE9i{}2S)anH=,tv">
+                          <value name="VALUE-0">
+                            <block type="GetVariable" id="qT+sAVHn{;f;Q6#bVwL!">
+                              <value name="VALUE-0">
+                                <block type="variableReferenceBlock" id="ufyQO}p8JcnXhi;jBV|,">
+                                  <mutation isObjectVar="true"></mutation>
+                                  <field name="OBJECTTYPE">Player</field>
+                                  <field name="VAR" id="Rj4jm.W~;06ipDyQZ?6C" variabletype="Player">Yaw</field>
+                                  <value name="OBJECT">
+                                    <block type="EventPlayer" id="=Wg1;~alEb*gL0bZL-EY"></block>
+                                  </value>
+                                </block>
+                              </value>
+                            </block>
+                          </value>
+                        </block>
+                      </value>
+                      <value name="VALUE-1">
+                        <block type="Number" id="]%@K^m3C1)owL]6[se|N">
+                          <field name="NUM">1.57079632679</field>
+                        </block>
+                      </value>
+                    </block>
+                  </value>
+                </block>
+              </value>
+            </block>
+          </statement>
+          <next>
+            <block type="If" id="FBoo[d(Rpl{ocx^qrgzn">
+              <value name="VALUE-0">
+                <block type="LessThan" id="Vi}CsK8}:SKNPg})C./T">
+                  <value name="VALUE-0">
+                    <block type="DotProduct" id="1.%.=2idORDh*Wqa1Qai" inline="false">
+                      <value name="VALUE-0">
+                        <block type="Normalize" id="[4DTBoD=S|H|w=ASTZ2U">
+                          <value name="VALUE-0">
+                            <block type="CreateVector" id="k`rfbE1EIRj]VxumeAwf" inline="false">
+                              <value name="VALUE-0">
+                                <block type="XComponentOf" id="+[|Tv8JW,,`|zg=2+y)]">
+                                  <value name="VALUE-0">
+                                    <block type="WorldVectorOf" id="+%F@^aq=_/@n@uj}9ooc">
+                                      <value name="VALUE-0">
+                                        <block type="ForwardVector" id="DcCIHr!Dt#V_Rm/J|X`7"></block>
+                                      </value>
+                                      <value name="VALUE-1">
+                                        <block type="EventPlayer" id="iXEm5GmYep5+SttD6ZXz"></block>
+                                      </value>
+                                    </block>
+                                  </value>
+                                </block>
+                              </value>
+                              <value name="VALUE-1">
+                                <block type="Number" id="homg0(jU;#k$B6,815v!">
+                                  <field name="NUM">0</field>
+                                </block>
+                              </value>
+                              <value name="VALUE-2">
+                                <block type="ZComponentOf" id="Z[3nB2/e:{4b0QE{fe.Q">
+                                  <value name="VALUE-0">
+                                    <block type="WorldVectorOf" id="%#f]{{|:u%|#K4S?{{9e">
+                                      <value name="VALUE-0">
+                                        <block type="ForwardVector" id="D$^?nv=zP4@if])Z[Uu~"></block>
+                                      </value>
+                                      <value name="VALUE-1">
+                                        <block type="EventPlayer" id="p-v}`1]ru%Pi(]zPpyPO"></block>
+                                      </value>
+                                    </block>
+                                  </value>
+                                </block>
+                              </value>
+                            </block>
+                          </value>
+                        </block>
+                      </value>
+                      <value name="VALUE-1">
+                        <block type="RightVector" id="kAM_?+$yCzGmK2;wSFmB"></block>
+                      </value>
+                    </block>
+                  </value>
+                  <value name="VALUE-1">
+                    <block type="Number" id="iQcx}BnU)KG3ui%b@=n^">
+                      <field name="NUM">0</field>
+                    </block>
+                  </value>
+                </block>
+              </value>
+              <statement name="DO">
+                <block type="SetVariable" id=")]CDM||%rXV09|0zJiB1">
+                  <value name="VALUE-0">
+                    <block type="variableReferenceBlock" id="lf2QQazX=pO_ezW?6[R2">
+                      <mutation isObjectVar="true"></mutation>
+                      <field name="OBJECTTYPE">Player</field>
+                      <field name="VAR" id="Rj4jm.W~;06ipDyQZ?6C" variabletype="Player">Yaw</field>
+                      <value name="OBJECT">
+                        <block type="EventPlayer" id="#X%S]h:!YT=qDuP+mbS="></block>
+                      </value>
+                    </block>
+                  </value>
+                  <value name="VALUE-1">
+                    <block type="Multiply" id="[WL@9P?hgg)TG`ctV@wZ">
+                      <value name="VALUE-0">
+                        <block type="GetVariable" id="3cL4Gg,i]QChW/jd`+%-">
+                          <value name="VALUE-0">
+                            <block type="variableReferenceBlock" id="..O6-:|Dq8;lAYWq*)D,">
+                              <mutation isObjectVar="true"></mutation>
+                              <field name="OBJECTTYPE">Player</field>
+                              <field name="VAR" id="Rj4jm.W~;06ipDyQZ?6C" variabletype="Player">Yaw</field>
+                              <value name="OBJECT">
+                                <block type="EventPlayer" id="wd6_A(=Bss9E5PD}`Y~0"></block>
+                              </value>
+                            </block>
+                          </value>
+                        </block>
+                      </value>
+                      <value name="VALUE-1">
+                        <block type="Number" id="2O3fHKq[T8YWN0nC7%cV">
+                          <field name="NUM">-1</field>
+                        </block>
+                      </value>
+                    </block>
+                  </value>
+                </block>
+              </statement>
+            </block>
+          </next>
+        </block>
+      </next>
+    </block>
+  </statement>
+</block>
